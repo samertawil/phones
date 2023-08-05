@@ -57,12 +57,12 @@ body{
                 @csrf
                 <div class="form-group">
                     <label for="name">اسم المستخدم</label>
-                    <input type="text" name="name" placeholder="اسم المستخدم"
+                    <input type="text" name="user_name" placeholder="اسم المستخدم"
                         class="form-control my-1
-                        @error('name') is-invalid @enderror"
-                        value="{{ old('name') }}" autocomplete="name" autofocus>
+                        @error('user_name') is-invalid @enderror"
+                        value="{{ old('user_name') }}" autocomplete="user_name" autofocus>
 
-                    @error('name')
+                    @error('user_name')
                         <span class="invalid-feedback" role="alert">
                             <small>{{ $message }}</small>
                         </span>
